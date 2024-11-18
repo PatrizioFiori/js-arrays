@@ -16,10 +16,11 @@ console.log(fourthTeacher);
 
 
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
-// 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
 teachers[4] = "Patrick"
+
+
+// 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
 const lastTeacher = teachers.pop()
-console.log(teachers);
 console.log(lastTeacher);
 
 
@@ -31,12 +32,14 @@ console.log(firstTeacher);
 
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
+teachers.push("vanessa");
+
 // 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
+teachers.unshift("Sarah");
+
 // 7. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
 let isFabioPresent = null;
-teachers.push("vanessa");
-teachers.unshift("Sarah");
 console.log(teachers);
 if (teachers.includes("Fabio")){
   isFabioPresent = true
